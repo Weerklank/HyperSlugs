@@ -14,26 +14,23 @@
 #body {
  background: url(https://i.imgur.com/AqAI2V5.jpg);
  padding-left: 0px;
- padding-right: 5px;
+ padding-right: 0px;
  height: 100%;
  width: 100%;
 
 }
 
 .headerTop {
-  padding: 30px;
+  padding-bottom: 0px;
   text-align: center;
   background: rgba(0,255,255,0.6);
   color:black;
   font-size: 30px;
   width: 100%;
-  height: 60px;
+  height: 100%;
+  min-width: 414px; 
 }
-.headerBottom {
-  
-  background: rgba(0,255,255,0.6);
-  color:black;
-}
+
 
 .savePlaylist {
   border-top: 5px;
@@ -73,7 +70,7 @@
   
   border-radius: 5px;
   padding: 5px;
-  max-width: 150px;
+  max-width: 300px;
 }
 /* end search box css_______________________________________________________________
 
@@ -89,8 +86,8 @@
 }
 
 .userInput{
-  width: 100%;
-  max-width: 188px;
+  min-width: 414px;
+  max-width: 100%;
   height: 510px;
   margin: 0 auto;
   padding: 0 20px;
@@ -98,6 +95,7 @@
   background: rgba(0,255,255,0.6);
   color: black;  
   float: left;
+
  }
    input[type=range] {
     height: 5px;
@@ -198,8 +196,9 @@
   /* Box styles */
   .listBox {
     max-height: 510px;
-    max-width: 800px;
-    align: right;
+    max-width: 100%;
+    min-width: 394px;
+    
     overflow: auto;
     background-color:#FFC0CB;
     color:white;
@@ -209,7 +208,6 @@
     padding: 10px;
     text-align: left;
     float: center;
-
   } 
 
   
@@ -260,20 +258,20 @@
   /* For devices larger than 400px */
   @media (min-width: 400px) {
     .container {
-      width: 85%;
-      padding: 0; }
+      width: 100%;
+      padding: 0px; }
   }
   
   /* For devices larger than 550px */
   @media (min-width: 550px) {
     .container {
-      width: 80%; }
+      width: 100%; }
     .column,
     .columns {
-      margin-left: 4%; }
+      margin-left: 0px; }
     .column:first-child,
     .columns:first-child {
-      margin-left: 0; }
+      margin-left: 0px; }
   
     .one.column,
     .one.columns                    { width: 4.66666666667%; }
@@ -636,4 +634,4 @@
   
   /* Larger than Desktop HD */
   @media (min-width: 1200px) {}
-  */
+  
