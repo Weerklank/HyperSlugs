@@ -70,7 +70,7 @@
    
    border-radius: 5px;
    padding: 5px;
-   max-width: 300px;
+
  }
  /* end search box css_______________________________________________________________
  
@@ -87,16 +87,172 @@
  
  .userInput{
    min-width: 414px;
-   max-width: 100%;
+   max-width: 800px;
    height: 510px;
    margin: 0 auto;
-   padding: 0 20px;
-   box-sizing: border-box; 
+   /*box-sizing: border-box;*/
    background: rgba(0,255,255,0.6);
    color: black;  
    float: left;
- 
+ }
+
+ /* Larger than mobile */
+ @media (min-width: 250px) {.responsiveInput{padding: 0 20px;
+  box-sizing: border-box; }}
+
+  /* Larger than mobile */
+  @media (min-width: 412px) {.responsiveInput{padding: 0 20px;
+    box-sizing: border-box; }
   }
+
+  /* Larger than mobile */
+  @media (min-width: 413px) {.responsiveInput{padding: 0 20px;
+    box-sizing: border-box;}
+  }
+
+  /* Larger than mobile */
+  @media (min-width: 414px) {.responsiveInput {
+    padding-left:  .7%;
+    padding-right: .7%;
+    box-sizing: content-box; }
+  }
+
+  @media (min-width: 430px) {.responsiveInput {
+    padding-left:  1.3%;
+    padding-right: 1.3%;
+    box-sizing: content-box; }
+  }
+
+  @media (min-width: 425px) {.responsiveInput {
+    padding-left:  2%;
+    padding-right: 2%;
+    box-sizing: content-box; }
+  }
+
+  @media (min-width: 450px) {.responsiveInput {
+    padding-left:  4.2%;
+    padding-right: 4.2%;
+    box-sizing: content-box; }
+  }
+
+  @media (min-width: 475px) {.responsiveInput {
+    padding-left:  6.7%;
+    padding-right: 6.7%;
+    box-sizing: content-box; }
+  }
+
+  @media (min-width: 500px) {.responsiveInput {
+    padding-left:  8.9%;
+    padding-right: 8.9%;
+    box-sizing: content-box; }
+  }
+
+  @media (min-width: 525px) {.responsiveInput {
+    padding-left:  10.6%;
+  padding-right: 10.6%;
+    box-sizing: content-box; }
+  } 
+  
+  
+ /* Larger than phablet (also point when grid becomes active) */
+ @media (min-width: 550px) {.responsiveInput {
+  padding-left:  12.4%;
+  padding-right: 12.4%;
+  box-sizing: content-box; }
+}
+
+@media (min-width: 575px) {.responsiveInput {
+  padding-left:  14.2%;
+  padding-right: 14.2%;
+  box-sizing: content-box; }
+}
+
+@media (min-width: 600px) {.responsiveInput {
+  padding-left:  15.7%;
+  padding-right: 15.7%;
+  box-sizing: content-box; }
+}
+
+@media (min-width: 625px) {.responsiveInput {
+  padding-left:  17.0%;
+  padding-right: 17.0%;
+  box-sizing: content-box; }
+}
+
+@media (min-width: 650px) {.responsiveInput {
+  padding-left:  18.2%;
+  padding-right: 18.2%;
+  box-sizing: content-box; }
+}
+
+@media (min-width: 675px) {.responsiveInput {
+  padding-left:  19.5%;
+  padding-right: 19.5%;
+  box-sizing: content-box; }
+}
+
+@media (min-width: 700px) {.responsiveInput {
+  padding-left:  20.5%;
+  padding-right: 20.5%;
+  box-sizing: content-box; }
+}
+
+@media (min-width: 725px) {.responsiveInput {
+  padding-left:  21.4%;
+  padding-right: 21.4%;
+  box-sizing: content-box; }
+}
+ 
+ /* Larger than tablet */
+ @media (min-width: 750px) {.responsiveInput {
+  padding-left:  22.5%;
+  padding-right: 22.5%;
+  box-sizing: content-box;}
+ }
+
+ @media (min-width: 765px) {.responsiveInput {
+  padding-left:  23.0%;
+  padding-right: 23.0%;
+  box-sizing: content-box;}
+ }
+
+ @media (min-width: 775px) {.responsiveInput {
+  padding-left:  23.3%;
+  padding-right: 23.3%;
+  box-sizing: content-box;}
+ }
+
+ @media (min-width: 800px) {.responsiveInput {
+  padding-left:  24.2%;
+  padding-right: 24.2%;
+  box-sizing: content-box;}
+ }
+
+ @media (min-width: 825px) {.responsiveInput {
+  padding-left:  25.0%;
+  padding-right: 25.0%;
+  box-sizing: content-box;}
+ }
+
+ @media (min-width: 850px) {.responsiveInput {
+  padding-left:  25.7%;
+  padding-right: 25.7%;
+  box-sizing: content-box;}
+ }
+
+ /* Larger than tablet */
+ @media (min-width: 869px) {.responsiveInput {
+    padding-left:  26.3%;
+    padding-right: 26.3%;
+  box-sizing: content-box;}
+    }
+
+ 
+ /* Larger than tablet */
+@media (min-width: 870px) {
+  .responsiveInput{padding: 0 20px;
+    box-sizing: border-box;} 
+    }
     input[type=range] {
      height: 5px;
      -webkit-appearance: none;
@@ -621,14 +777,24 @@
    
    
    /* Larger than mobile */
-   @media (min-width: 400px) {}
+   @media (min-width: 400px) { 
+  }
    
    /* Larger than phablet (also point when grid becomes active) */
    @media (min-width: 550px) {}
    
    /* Larger than tablet */
    @media (min-width: 750px) {}
-   
+
+      /* Larger than tablet */
+      @media (min-width: 828px) {}
+
+ /* Larger than tablet */
+ @media (min-width: 829px) {}
+
+      /* Larger than tablet */
+      @media (min-width: 830px) {}
+      
    /* Larger than desktop */
    @media (min-width: 1000px) {}
    
