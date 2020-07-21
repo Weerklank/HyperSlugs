@@ -19,27 +19,10 @@
   width: 100%;
  }
 
- #bodyAuth {
-  background: url(https://i.imgur.com/FLylEwe.png);
-  align: center;
-  height: 100%;
-  width: 100%;
- }
 
-    /* Larger than mobile */
-    @media (min-width: 400px)  {.responsiveRecord {
-      max-width: 310px;
-      height: 100%;
-    }
-     
-    }
-     
-     /* Larger than phablet (also point when grid becomes active) */
-     @media (min-width: 550px) {.responsiveRecord {
-      max-width: 600px;
-      height: 100%;}
 
-     }
+
+
      
 
  
@@ -155,7 +138,7 @@
     opacity: 1; 
 }
 
- /* Search Box ___________________________________________________________ */
+ /* Search Box ____________________________________________________________ */
  #searchContainer {
   top: 0;
   right: 0;
@@ -184,7 +167,7 @@
  
  
  
- /* User Input CSS _______________________________________________________________*/
+ /* User Input CSS ____________________________________________________________*/
  
  .u-full-width {
    box-sizing: content-box;
@@ -204,7 +187,10 @@
 
  /* Larger than mobile */
  @media (min-width: 250px) {.responsiveInput{padding: 0 20px;
-  box-sizing: border-box; }}
+  box-sizing: border-box; }
+  .responsiveRecord {max-width: 310px;
+  margin-left: 50px;}
+}
 
   /* Larger than mobile */
   @media (min-width: 412px) {.responsiveInput{padding: 0 20px;
@@ -255,8 +241,12 @@
 
   @media (min-width: 525px) {.responsiveInput {
     padding-left:  10.6%;
-  padding-right: 10.6%;
+    padding-right: 10.6%;
     box-sizing: content-box; }
+
+    .responsiveRecord {
+      min-width: 310px;
+    padding-left: 0px;}
   } 
   
   
@@ -265,6 +255,9 @@
   padding-left:  12.4%;
   padding-right: 12.4%;
   box-sizing: content-box; }
+
+  .responsiveRecord {
+    min-width: 600px}
 }
 
 @media (min-width: 575px) {.responsiveInput {
