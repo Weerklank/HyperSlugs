@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="skeleton.css">
+   <!-- <link href="ExampleStyle.css" type="text/css" rel="stylesheet"/>-->
     <title>TŪNADO!</title>
 </head>
 
@@ -18,7 +19,9 @@
     <h1 class="tunado">TŪNADO!</h1>
                             
     <div class="row">
-        <input class="button auth" type="submit" value="Authorize">
+        <span class="tooltip" data-tooltip="Click here to authorize. If you are not currently logged into Spotify you will be prompted to do so. Once you have logged in, you will be redirected to the authentication page">?</span>
+       
+        <input class="button auth" type="submit"  value="Authorize">
 
         <input class="searchControl" type="text" placeholder="City Name or Zipcode" id="searchInput">
                             
@@ -104,6 +107,7 @@
                     <input class="saveControl" type="text" placeholder="Name Playlist">
                     <!-- Apply user input settings and save name below------------>
                     <input class="button u-full-width saveName apply" type="submit" value="Apply" />
+                    <div align="center"><span class="inputTooltip" data-tooltip="Click APPLY to save playlist name and run TŪNADO!. It may take a moment to receive your new playlist. Make sure you have 'liked' songs in your Spotify profile." >?</span></div> 
             </form>
         
 </div>
